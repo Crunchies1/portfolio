@@ -1,0 +1,16 @@
+.transition-slide-right {
+    opacity: 1;
+    transition: 0.5s; 
+    transform: translateX(0);
+    transform-origin: left;
+}
+
+html.is-animating .transition-slide-right {
+    opacity: 0;
+    transform: translateX(-100%);
+}
+
+html.is-leaving .transition-slide-right {
+    opacity: 0;
+    transform: translateX(0);
+}
